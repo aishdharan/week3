@@ -1,12 +1,6 @@
 import os
 import sys
 
-"""
-Notes:
-- This is An excellent illustration of 'running out of variables'
-- Please see inline note 1 below
-"""
-
 
 def main():
     # they don't have to be ints only
@@ -41,11 +35,6 @@ def main():
         [B17, B18, B19]
     ]
     print(f'B = {B}')
-    """
-    inline note 1:
-    - I don't doubt the calculation below is correct but by being
-    very hard to read it becomes prone to bugs.
-    """
     C11 = A11 * B11 + A12 * B14 + A13 * B17
     C12 = A11 * B12 + A12 * B15 + A13 * B18
     C13 = A11 * B13 + A12 * B16 + A13 * B19

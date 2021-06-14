@@ -4,8 +4,7 @@ import random
 
 """
 Notes:
-- Please rename variables
-- Otherwise excellent attempt
+- Excellent attempt
 """
 
 

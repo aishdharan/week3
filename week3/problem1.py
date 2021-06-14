@@ -4,7 +4,6 @@ import random
 
 """
 Notes
-- The same feedback applies on variable names (see problem0.py).
 - While it is good that you have implemented an if statement it would 
 have been perfectly OK to simply use a boolean as below. Please keep
 in mind that I only expect students to apply what they have learned

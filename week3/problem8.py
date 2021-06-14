@@ -2,12 +2,6 @@ import os
 import sys
 import random
 
-"""
-Notes:
-- Only one tiny thing to fix: what is the return value of main() if the assertion passes?
-This is a valuable exploration to expose you to some debugging.
-"""
-
 
 def main():
     r = int(input("Give a number: "))

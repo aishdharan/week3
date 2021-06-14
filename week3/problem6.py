@@ -4,16 +4,7 @@ import math
 
 """
 Notes:
-- Your program converts user input to int? What limitation does this impose?
-- I entered (1, 1, 1) and (2, 2, 2) and received:
-Traceback (most recent call last):
-  File "/Users/paulkorir/sci2pro/aishdharan/week3/week3/problem6.py", line 61, in <module>
-    sys.exit(main())
-  File "/Users/paulkorir/sci2pro/aishdharan/week3/week3/problem6.py", line 42, in main
-    ang_a_b = math.acos(a_mul_b / mag_ab)
-ValueError: math domain error
-
-Determine the cause and fix it.
+- (New) What are the units of the return value of math.acos()? How would that affect your calculation?
 - For pt_* variables: is it better to use a tuple or a list? 
 Why? Consider the key property differences between a tuple and list
  when deciding this.
@@ -21,13 +12,14 @@ Why? Consider the key property differences between a tuple and list
 
 
 def main():
-    # fixme: it is OK to use x0, y0, z0 as variables since
-    #  they will make sense in the application domain (geometry)
+    # good!
     x0 = 0
     y0 = 0
     z0 = 0
     pt_o = [x0, y0, z0]
     # changed to list; if change one of the coordinates midway the code-> can't be done if it's a tuple
+    # todo: why would you want to change the coordinate? since a tuple is immutable it is the safest way of ensuring
+    #  that the original data is never modified unless the variable is overwritten
     print(f"Origin{pt_o}")
     x1 = float(input("x1 = "))
     y1 = float(input("y1 = "))
@@ -45,6 +37,8 @@ def main():
     print(f"The distance between points A and B in 3D space is: {dist_a_b}")
     print(f"The distance between points A and Origin in 3D space is: {dist_a_o}")
     print(f"The distance between points B and Origin in 3D space is: {dist_b_o}")
+    # fixme: i'm not sure about what's going on here; could you please include a reference of what this does?
+    # this was a bonus so I would focus on this week4 work instead but feel free to try it out
     a_mul_b = (pt_a[0] * pt_b[0] + pt_a[1] * pt_b[1] + pt_a[2] * pt_b[2])
     a_mul_o = (pt_a[0] * pt_o[0] + pt_a[1] * pt_o[1] + pt_a[2] * pt_o[2])
     b_mul_o = (pt_b[0] * pt_o[0] + pt_b[1] * pt_o[1] + pt_b[2] * pt_o[2])
