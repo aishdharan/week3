@@ -10,6 +10,3 @@ problem/score
 8/10
 9/10 # Bravo!
 Total/99
-# revise problem0.py to receive full marks (it was just a matter of understanding the question)
-# revise problem6.py to receive more marks
-# revise problem8.py to receive full marks
